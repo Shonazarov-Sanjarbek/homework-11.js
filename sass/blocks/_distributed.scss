@@ -1,0 +1,139 @@
+.distributed{
+    width: 100%;
+    padding: 100px 0;
+    background: $bg-sacramento;
+    &__block{
+        width: 100%;
+        @include df(space-between, start);
+    }
+    &__subtitle{
+        width: 45%;
+        @include dfc(start, start);
+        gap: 54px;
+        p{
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+            color: $bg-light;
+        }
+    }
+    &__subtitle::before{
+        content: "";
+        width: 50px;
+        border: 2px solid $bg-sy;
+    }
+    &__wrapper{
+        width: 50%;
+        @include dfc();
+        gap: 32px;
+    }
+    &__card{
+        width: 100%;
+        @include df();
+        gap: 23px;
+    }
+    &__img{
+        width: 72px;
+        height: 72px;   
+        img{
+           width: 100%; 
+           height: 100%;
+        }
+    }
+    &__desc{
+        width: 80%;
+        @include dfc(start, center);
+        gap: 16px;
+    }
+    &__title{
+        width: 100%;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        color: $bg-sy;
+    }
+    &__text{
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px;
+        color: $bg-light;
+    }
+}
+
+@media (max-width: 950px){
+    .distributed__subtitle{
+        width: 40%;
+        gap: 48px;
+        p{
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
+    .distributed__wrapper{
+        width: 60%;
+    }
+    .distributed__img{
+        width: 60px;
+        height: 60px;
+    }
+    .distributed__title{
+        font-size: 16px;
+        font-weight: 18px;
+        font-weight: 400;
+    }
+    .distributed__text{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 800px){
+    .distributed__subtitle{
+        width: 30%;
+        gap: 36px;
+        p{
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+    }
+}
+@media (max-width: 710px){
+    .distributed__block{
+        @include dfc();
+        gap: 64px;
+    }
+    .distributed__subtitle{
+        width: 85%;
+        @include dfc(start, center);
+        gap: 32px;
+        p{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
+    .distributed__wrapper{
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px){
+    .distributed__subtitle{
+        gap: 28px;
+        p{
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 28px;
+        }
+    }
+}
+@media (max-width: 400px){
+    .distributed__card{
+        @include dfc();
+        text-align: center;
+    }
+}

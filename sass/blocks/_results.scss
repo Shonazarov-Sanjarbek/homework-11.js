@@ -1,0 +1,128 @@
+.results    {
+    width: 100%;
+    background: $bg-deep;
+    padding: 140px 0;
+    &__block{
+        width: 100%;
+        @include dfc(center, start);
+        gap: 56px;
+    }
+    &__subtitle{
+        width: 90%;
+        text-align: center;
+        p{
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+            color: $bg-light;
+            span{
+                color: $bg-rapture;
+            }
+        }
+    }
+    &__wrapper{
+        width: 100%;
+        @include df();
+        gap: 30px;
+    }
+    &__card{
+        width: calc(33.33% - 20px);
+        @include dfc();
+        gap: 24px;
+    }
+    &__text{
+        width: 100%;
+        background: url(../../assets/img/back.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 57px;
+        margin-bottom: -37px;
+        padding: 28px 0;
+        p{
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 25px;
+            color: $bg-light;
+        }
+    }
+    &__desc{
+        width: 100%;
+        @include dfc();
+        gap: 2px;
+        p{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 28px;
+            color: $bg-rapture;
+        }
+        i{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            color: $bg-light;
+        }
+    }
+    &__img{
+        width: 62px;
+        height: 62px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media (max-width: 900px){
+    .results__subtitle{
+        p{
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 36px;
+        }
+    }
+    .results__text{
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+    }
+}
+@media (max-width: 800px){
+    .results__wrapper{
+        @include dfc();
+        gap: 48px;
+    }
+    .results__card{
+        width: 90%; 
+        @include df();
+        text-align: center;
+    }
+    .results__text{
+        p{
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 600;
+        }
+    }
+    .results__desc{
+        p{
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 700;
+        }
+        i{
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
+@media (max-width: 500px){
+    .results__subtitle{
+        p{
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 32px;
+        }
+    }
+}

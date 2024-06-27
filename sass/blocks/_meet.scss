@@ -1,0 +1,60 @@
+.meet{
+    width: 100%;
+    background: $bg-deep;
+    padding: 140px 0;
+    &__block{
+        width: 100%;
+        @include dfc();
+        gap: 64px;
+    }
+    &__subtitle{
+        width: 100%;
+        @include df();
+        p{
+            font-size: 48px;
+            font-weight: 700;
+            line-height:48px;
+            color: $bg-light;
+        }
+    }
+    &__wrapper{
+        width: 100%;
+        @include df();
+        gap: 30px; 
+    }
+    &__card{
+        width: calc(33.33% - 20px);
+        @include dfc();
+        gap: 16px; 
+        padding: 16px 0 0;    
+        background: $bg-sacramento;  
+    }
+    &__img{
+        width: 96px;
+        height: 96px;
+        margin-top: 16px;
+    }
+    &__desc{
+        width: 100%;
+        @include dfc();
+        p{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 28px;
+            color: $bg-rapture;
+        }
+        i{
+            font-size: 15px;
+            line-height: 25px;
+            color: $bg-light;
+        }
+    }
+
+    &__icon{
+        position: relative;
+        width: 56px;
+        height: 56px;
+        top: 30px;
+        
+    }
+}
