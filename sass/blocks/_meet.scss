@@ -21,9 +21,11 @@
         width: 100%;
         @include df();
         gap: 30px; 
+        flex-wrap: wrap;
     }
     &__card{
         width: calc(33.33% - 20px);
+        height: 281px;
         @include dfc();
         gap: 16px; 
         padding: 16px 0 0;    
@@ -54,7 +56,24 @@
         position: relative;
         width: 56px;
         height: 56px;
-        top: 30px;
-        
+        top: 30px;       
+    }
+}
+
+@media (max-width: 770px){
+    .meet__wrapper{
+        gap: 11px;
+    }
+    .meet__card{
+        width: calc(50% - 5.5px);
+    }
+}
+@media (max-width: 500px){
+    .meet__wrapper{
+        flex-direction: column;
+        gap: 52px;
+    }
+    .meet__card{
+        width: 100%;
     }
 }

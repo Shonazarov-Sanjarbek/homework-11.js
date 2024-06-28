@@ -1,0 +1,31 @@
+.clients{
+    width: 100%;
+    background: $bg-sacramento;
+    padding: 140px;
+    &__block{
+        width: 100%;
+        @include dfc();
+        gap: 64px;
+    }
+    &__subtitle{
+        width: 100%;
+        @include df();
+        p{
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+            color: $bg-light;
+        }
+    }
+    &__wrapper{
+        width: 100%;
+        @include df();
+        gap: 80px;
+    }
+    &__card{
+        width: calc(20% - 64px);
+        img{
+            width: 100%;
+        }
+    }
+}
