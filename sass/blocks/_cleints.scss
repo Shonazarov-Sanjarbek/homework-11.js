@@ -29,3 +29,56 @@
         }
     }
 }
+
+@media (max-width: 900px){
+    .clients__wrapper{
+        gap: 60px;
+    }
+    .clients__card{
+        width: calc(20% - 48px);
+    }
+}
+@media (max-width: 800px){
+    .clients__subtitle{
+        p{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
+    .clients__wrapper{
+        gap: 40px;
+    }
+    .clients__card{
+        width: calc(20% - 32px);
+    }
+}
+@media (max-width: 700px){
+    .clients__wrapper{
+        gap: 20px;
+    }
+    .clients__card{
+        width: calc(20% - 16px);
+    }
+}
+@media (max-width: 600px){
+    .clients__block{
+        width: 100%;
+        
+    }
+    .clients__subtitle{
+        width: 100%;
+        p{
+            width: 100%;
+            font-size: 48px;
+            line-height: 48px;
+        }
+    }
+    .clients__wrapper{
+        @include dfc();
+        gap: 32px;
+    }
+    .clients__card{
+        width: 100%;
+    }
+}
