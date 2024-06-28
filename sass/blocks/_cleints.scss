@@ -1,7 +1,7 @@
 .clients{
     width: 100%;
     background: $bg-sacramento;
-    padding: 140px;
+    padding: 140px 0;
     &__block{
         width: 100%;
         @include dfc();
@@ -69,7 +69,6 @@
     .clients__subtitle{
         width: 100%;
         p{
-            width: 100%;
             font-size: 48px;
             line-height: 48px;
         }
@@ -79,6 +78,14 @@
         gap: 32px;
     }
     .clients__card{
-        width: 100%;
+        width: 50%;
+    }
+}
+@media (max-width: 470px){
+    .clients__subtitle{
+        p{
+            font-size: 32px;
+            line-height: 32px;
+        }
     }
 }
