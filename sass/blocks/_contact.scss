@@ -1,0 +1,60 @@
+.contact{
+    width: 100%;
+    padding: 120px 0;
+    background: $bg-py;
+    &__block{
+        width: 100%;
+        @include df();
+        gap: 30px;
+    }
+    &__content{
+        width: calc(50% - 15px);
+        @include dfc();
+        gap: 16px;
+    }
+    &__subtitle{
+        width: 100%;
+        @include df(start, center);
+        p{
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 100px;
+            color: $bg-light;
+        }
+    }
+    &__desc{
+        width: 100%;
+        @include dfc(start, center);
+        gap: 32px;
+    }
+    &__title{
+        width: 100%;
+        @include dfc(start, center);
+        p{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 48px;
+            color: $bg-sy;
+        }
+    }
+    &__wrapper{
+        width: 100%;
+        @include dfc();
+        gap: 8px;
+    }
+    &__card{
+        width: 100%;
+        @include df();
+        gap: 23px;
+        img{
+            width: calc(15% - 11.5px);
+        }
+        p{
+            width: calc(85% - 11.5px);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 28px;
+            color: $bg-light;
+        }
+    }
+}
