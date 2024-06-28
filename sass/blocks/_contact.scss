@@ -83,5 +83,24 @@
             color: $bg-py;
         }
     }
+}
 
+@media (max-width: 800px){
+    .contact__block{
+        @include dfc();
+        gap: 64px;
+    }
+    .contact__content{
+        width: 90%;
+        @include dfc(center, center);
+    }
+    .contact__subtitle{
+        @include df(center, center);
+    }
+    .contact__title{
+        @include df(center,center);
+    }
+    .contact__inp{
+        width: 90%;
+    }
 }
