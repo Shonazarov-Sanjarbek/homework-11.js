@@ -57,4 +57,31 @@
             color: $bg-light;
         }
     }
+    &__inp{
+        width: calc(50% - 15px);
+        @include dfc(start, center);
+        gap: 24px;
+        input{
+            width: 100%;
+            border-bottom: 1px solid $bg-light;
+            background: inherit;
+            padding: 16px 14px;
+        }
+        input::placeholder{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 26px;
+            color: $bg-light;
+        }
+        input:last-child{
+            padding: 0 14px 58px;
+        }
+        button{
+            @include btn();
+            background: $bg-light;
+            border: none;
+            color: $bg-py;
+        }
+    }
+
 }
